@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baghgadi Fabrics - Premium Suit Collection</title>
+<meta name="description" content="Baghgadi Fabrics - Best quality suits, unstitched fabrics, lawn, chiffon, khaddar collection.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="text-center">
+    <div class="loader-circle mx-auto mb-4"></div>
+    <h2 class="gold-text text-3xl serif">Baghgadi Fabrics</h2>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav-glass fixed top-0 left-0 right-0 z-50 px-6 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="#home" onclick="showPage('home')" class="flex items-center gap-3">
+      <div class=><img class="w-12 h-12 rounded-full bg-gradient-to-br  flex items-center justify-center " src="./img/./f.b-logo.png" alt=""></div>
+      <div>
+        <h1 class="text-xl serif gold-text font-bold">Baghgadi</h1>
+        <p class="text-xs text-gray-400">FB Fabrics</p>
+      </div>
+    </a>
+    
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#home" onclick="showPage('home')" class="nav-link hover:text-yellow-400 transition">Home</a>
+      <a href="#shop" onclick="showPage('shop')" class="nav-link hover:text-yellow-400 transition">Shop</a>
+      <a href="#about" onclick="showPage('about')" class="nav-link hover:text-yellow-400 transition">About</a>
+      <a href="#contact" onclick="showPage('contact')" class="nav-link hover:text-yellow-400 transition">Contact</a>
+      <a href="#admin" onclick="showPage('admin')" class="text-yellow-400 hover:text-yellow-300 transition"><i class="fas fa-lock"></i></a>
+    </div>
+    
+    <button onclick="toggleMenu()" class="md:hidden text-2xl text-yellow-400"><i class="fas fa-bars"></i></button>
+  </div>
+  
+  <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3">
+    <a href="#home" onclick="showPage('home');toggleMenu()" class="hover:text-yellow-400">Home</a>
+    <a href="#shop" onclick="showPage('shop');toggleMenu()" class="hover:text-yellow-400">Shop</a>
+    <a href="#about" onclick="showPage('about');toggleMenu()" class="hover:text-yellow-400">About</a>
+    <a href="#contact" onclick="showPage('contact');toggleMenu()" class="hover:text-yellow-400">Contact</a>
+    <a href="#admin" onclick="showPage('admin');toggleMenu()" class="text-yellow-400"><i class="fas fa-lock"></i> Admin</a>
+  </div>
+</nav>
+
+<!-- ============ HOME PAGE ============ -->
+<div id="home" class="page active">
+  
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center relative pt-20">
+    <div class="particles" id="particles"></div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div>
+        <p class="text-yellow-400 mb-4 tracking-widest text-sm" style="animation:fadeUp 1s">✨ PREMIUM COLLECTION 2026</p>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 serif leading-tight" style="animation:fadeUp 1.2s">
+          Elegance in <br><span class="gold-text">Every Thread</span>
+        </h1>
+        <p class="text-gray-300 text-lg mb-8 max-w-lg" style="animation:fadeUp 1.4s">
+          Discover the finest unstitched fabrics, luxury lawn, chiffon, khaddar, and premium suit collections. Crafted with tradition, designed for modern elegance.
+        </p>
+        <div class="flex flex-wrap gap-4" style="animation:fadeUp 1.6s">
+          <button onclick="showPage('shop')" class="btn-gold px-8 py-4 rounded-full">
+            <i class="fas fa-shopping-bag mr-2"></i>Shop Now
+          </button>
+          <button onclick="showPage('about')" class="btn-outline px-8 py-4 rounded-full">Learn More</button>
+        </div>
+        <div class="flex gap-8 mt-12" style="animation:fadeUp 1.8s">
+          <div><h3 class="text-3xl gold-text serif">500+</h3><p class="text-sm text-gray-400">Designs</p></div>
+          <div><h3 class="text-3xl gold-text serif">10K+</h3><p class="text-sm text-gray-400">Happy Clients</p></div>
+          <div><h3 class="text-3xl gold-text serif">15+</h3><p class="text-sm text-gray-400">Years</p></div>
+        </div>
+      </div>
+      <div class="relative" style="animation:zoomIn 1.5s">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-yellow-400 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute -bottom-10 -right-10 w-60 h-60 bg-yellow-600 rounded-full opacity-20 blur-3xl"></div>
+        <img src="./img/fayazpic-1.png" alt="Fabric" class="rounded-3xl shadow-2xl float-anim relative z-10">
+      </div>
+    </div>
+  </section>
+  
+  <!-- MARQUEE -->
+  <div class="bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 py-4 overflow-hidden">
+    <div class="marquee">
+      <div class="marquee-content text-black font-bold text-xl">
+        ✨ FREE DELIVERY ALL OVER baldia &nbsp;&nbsp;•&nbsp;&nbsp; ✨ NEW ARRIVALS EVERY WEEK &nbsp;&nbsp;•&nbsp;&nbsp; ✨ PREMIUM QUALITY GUARANTEED &nbsp;&nbsp;•&nbsp;&nbsp; ✨ CASH ON DELIVERY AVAILABLE &nbsp;&nbsp;•&nbsp;&nbsp; ✨ BAGHGADI FABRICS - FB FABRICS &nbsp;&nbsp;•&nbsp;&nbsp;
+        ✨ FREE DELIVERY ALL OVER baldia &nbsp;&nbsp;•&nbsp;&nbsp; ✨ NEW ARRIVALS EVERY WEEK &nbsp;&nbsp;•&nbsp;&nbsp; ✨ PREMIUM QUALITY GUARANTEED &nbsp;&nbsp;•&nbsp;&nbsp; ✨ CASH ON DELIVERY AVAILABLE &nbsp;&nbsp;•&nbsp;&nbsp; ✨ BAGHGADI FABRICS - FB FABRICS &nbsp;&nbsp;•&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  
+  <!-- FEATURES -->
+  <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">WHY CHOOSE US</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">The <span class="gold-text">Baghgadi</span> Promise</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center reveal">
+          <div class="feature-icon mx-auto mb-4"><i class="fas fa-gem"></i></div>
+          <h3 class="text-xl serif mb-2">Premium Quality</h3>
+          <p class="text-gray-400 text-sm">Hand-picked finest fabrics from top manufacturers</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="feature-icon mx-auto mb-4"><i class="fas fa-truck"></i></div>
+          <h3 class="text-xl serif mb-2">Fast Delivery</h3>
+          <p class="text-gray-400 text-sm">Nationwide delivery within 3-5 business days</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="feature-icon mx-auto mb-4"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="text-xl serif mb-2">Secure Payment</h3>
+          <p class="text-gray-400 text-sm">Cash on delivery & online payment options</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="feature-icon mx-auto mb-4"><i class="fas fa-headset"></i></div>
+          <h3 class="text-xl serif mb-2">24/7 Support</h3>
+          <p class="text-gray-400 text-sm">WhatsApp support anytime you need us</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CATEGORIES -->
+  <section class="py-20 px-6 bg-gradient-to-b from-black to-zinc-900">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">EXPLORE</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">Our <span class="gold-text">Categories</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="cat-card h-80 reveal-left cursor-pointer" onclick="filterCategory('Lawn')">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600" class="w-full h-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+            <h3 class="text-3xl serif gold-text">Lawn Collection</h3>
+            <p class="text-gray-300">Summer Essentials</p>
+          </div>
+        </div>
+        <div class="cat-card h-80 reveal-zoom cursor-pointer" onclick="filterCategory('Chiffon')">
+          <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600" class="w-full h-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+            <h3 class="text-3xl serif gold-text">Chiffon Luxury</h3>
+            <p class="text-gray-300">Festive Elegance</p>
+          </div>
+        </div>
+        <div class="cat-card h-80 reveal-right cursor-pointer" onclick="filterCategory('Khaddar')">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&sat=-50" class="w-full h-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+            <h3 class="text-3xl serif gold-text">Khaddar Winter</h3>
+            <p class="text-gray-300">Warm & Traditional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FEATURED PRODUCTS -->
+  <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">BEST SELLERS</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">Featured <span class="gold-text">Collection</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div id="featuredProducts" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      <div class="text-center mt-12 reveal">
+        <button onclick="showPage('shop')" class="btn-gold px-10 py-4 rounded-full">
+          View All Products <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- TESTIMONIALS -->
+  <section class="py-20 px-6 bg-gradient-to-b from-zinc-900 to-black">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">TESTIMONIALS</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">What Our <span class="gold-text">Clients Say</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="testimonial p-8 rounded-2xl reveal-left">
+          <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="text-gray-300 italic mb-6">"Best fabric quality I've ever purchased. The lawn collection is absolutely stunning and the delivery was super fast!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center font-bold">A</div>
+            <div><h4 class="font-semibold">Ayesha Khan</h4><p class="text-xs text-gray-400">Lahore</p></div>
+          </div>
+        </div>
+        <div class="testimonial p-8 rounded-2xl reveal">
+          <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="text-gray-300 italic mb-6">"Baghgadi Fabrics never disappoints. Their chiffon collection is perfect for weddings. Highly recommended!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center font-bold">F</div>
+            <div><h4 class="font-semibold">Fatima Ali</h4><p class="text-xs text-gray-400">Karachi</p></div>
+          </div>
+        </div>
+        <div class="testimonial p-8 rounded-2xl reveal-right">
+          <div class="flex text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="text-gray-300 italic mb-6">"Amazing customer service and premium quality fabrics. I'm a loyal customer for 3 years now. Love it!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center font-bold">S</div>
+            <div><h4 class="font-semibold">Sana Malik</h4><p class="text-xs text-gray-400">Islamabad</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA -->
+  <section class="py-20 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-yellow-900/20 via-yellow-600/10 to-yellow-900/20"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+      <h2 class="text-4xl md:text-5xl serif font-bold mb-6">Ready to <span class="gold-text">Elevate</span> Your Style?</h2>
+      <p class="text-gray-300 text-lg mb-8">Join thousands of satisfied customers. Order now and experience the luxury of Baghgadi Fabrics.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="showPage('shop')" class="btn-gold px-10 py-4 rounded-full">Shop Collection</button>
+        <a href="https://wa.me/923102125634" class="btn-outline px-10 py-4 rounded-full"><i class="fab fa-whatsapp mr-2"></i>WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ SHOP PAGE ============ -->
+<div id="shop" class="page">
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">OUR COLLECTION</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">Premium <span class="gold-text">Suits & Fabrics</span></h2>
+        <div class="divider"></div>
+      </div>
+      
+      <!-- Filters -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+        <button onclick="filterCategory('all')" class="filter-btn btn-gold px-6 py-2 rounded-full text-sm">All</button>
+        <button onclick="filterCategory('Lawn')" class="filter-btn btn-outline px-6 py-2 rounded-full text-sm">Lawn</button>
+        <button onclick="filterCategory('Chiffon')" class="filter-btn btn-outline px-6 py-2 rounded-full text-sm">Chiffon</button>
+        <button onclick="filterCategory('Khaddar')" class="filter-btn btn-outline px-6 py-2 rounded-full text-sm">Khaddar</button>
+        <button onclick="filterCategory('Silk')" class="filter-btn btn-outline px-6 py-2 rounded-full text-sm">Silk</button>
+        <button onclick="filterCategory('Linen')" class="filter-btn btn-outline px-6 py-2 rounded-full text-sm">Linen</button>
+      </div>
+      
+      <div id="allProducts" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ABOUT PAGE ============ -->
+<div id="about" class="page">
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="reveal-left">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800" class="rounded-3xl shadow-2xl">
+        </div>
+        <div class="reveal-right">
+          <p class="text-yellow-400 tracking-widest text-sm mb-2">ABOUT US</p>
+          <h2 class="text-4xl md:text-5xl serif font-bold mb-6">The <span class="gold-text">Baghgadi</span> Story</h2>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Founded with a passion for excellence, Baghgadi Fabrics (FB Fabrics) has been serving customers with the finest quality unstitched fabrics for over 15 years. Our journey began with a simple vision — to bring luxury and tradition together in every thread we offer.
+          </p>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            From premium lawn collections to luxurious chiffon, warm khaddar to elegant silk, we curate only the best fabrics that meet international quality standards. Each piece in our collection is carefully selected to ensure you receive nothing but perfection.
+          </p>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Our commitment to quality, customer satisfaction, and timely delivery has made us a trusted name in the fabric industry. We believe every woman deserves to feel elegant, and that's what we deliver — elegance in every thread.
+          </p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="text-center p-4 bg-zinc-900 rounded-xl"><h3 class="text-3xl gold-text serif">15+</h3><p class="text-xs text-gray-400">Years</p></div>
+            <div class="text-center p-4 bg-zinc-900 rounded-xl"><h3 class="text-3xl gold-text serif">10K+</h3><p class="text-xs text-gray-400">Clients</p></div>
+            <div class="text-center p-4 bg-zinc-900 rounded-xl"><h3 class="text-3xl gold-text serif">500+</h3><p class="text-xs text-gray-400">Designs</p></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mission Vision -->
+      <div class="grid md:grid-cols-2 gap-6 mb-20">
+        <div class="p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left">
+          <div class="feature-icon mb-4"><i class="fas fa-bullseye"></i></div>
+          <h3 class="text-2xl serif mb-4 gold-text">Our Mission</h3>
+          <p class="text-gray-300">To provide premium quality fabrics at affordable prices while delivering exceptional customer service across Pakistan and beyond.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-right">
+          <div class="feature-icon mb-4"><i class="fas fa-eye"></i></div>
+          <h3 class="text-2xl serif mb-4 gold-text">Our Vision</h3>
+          <p class="text-gray-300">To become Pakistan's most trusted and loved fabric brand, known for quality, innovation, and customer satisfaction.</p>
+        </div>
+      </div>
+      
+      <!-- Values -->
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-4xl serif font-bold">Our <span class="gold-text">Core Values</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-zinc-900 rounded-xl reveal">
+          <i class="fas fa-award text-4xl gold-text mb-4"></i>
+          <h4 class="serif text-xl mb-2">Quality</h4>
+          <p class="text-sm text-gray-400">Only the finest fabrics make it to our collection</p>
+        </div>
+        <div class="text-center p-6 bg-zinc-900 rounded-xl reveal">
+          <i class="fas fa-handshake text-4xl gold-text mb-4"></i>
+          <h4 class="serif text-xl mb-2">Trust</h4>
+          <p class="text-sm text-gray-400">Building lasting relationships with our customers</p>
+        </div>
+        <div class="text-center p-6 bg-zinc-900 rounded-xl reveal">
+          <i class="fas fa-heart text-4xl gold-text mb-4"></i>
+          <h4 class="serif text-xl mb-2">Passion</h4>
+          <p class="text-sm text-gray-400">Love for fabrics drives everything we do</p>
+        </div>
+        <div class="text-center p-6 bg-zinc-900 rounded-xl reveal">
+          <i class="fas fa-lightbulb text-4xl gold-text mb-4"></i>
+          <h4 class="serif text-xl mb-2">Innovation</h4>
+          <p class="text-sm text-gray-400">Constantly evolving with latest trends</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONTACT PAGE ============ -->
+<div id="contact" class="page">
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <p class="text-yellow-400 tracking-widest text-sm mb-2">GET IN TOUCH</p>
+        <h2 class="text-4xl md:text-5xl serif font-bold">Contact <span class="gold-text">Us</span></h2>
+        <div class="divider"></div>
+        <p class="text-gray-300 max-w-2xl mx-auto mt-4">We'd love to hear from you. Reach out to us through any of the following channels.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left flex gap-4">
+            <div class="feature-icon flex-shrink-0"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4 class="text-xl serif gold-text mb-1">Phone</h4>
+              <a href="tel:03102125634" class="text-gray-300 hover:text-yellow-400">0310-2125634</a>
+            </div>
+          </div>
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left flex gap-4">
+            <div class="feature-icon flex-shrink-0"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4 class="text-xl serif gold-text mb-1">WhatsApp</h4>
+              <a href="https://wa.me/923102125634" class="text-gray-300 hover:text-yellow-400">+92 310 2125634</a>
+            </div>
+          </div>
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left flex gap-4">
+            <div class="feature-icon flex-shrink-0"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 class="text-xl serif gold-text mb-1">Email</h4>
+              <a href="mailto:info@baghgadi.com" class="text-gray-300 hover:text-yellow-400">info@baghgadi.com</a>
+            </div>
+          </div>
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left flex gap-4">
+            <div class="feature-icon flex-shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 class="text-xl serif gold-text mb-1">Address</h4>
+              <p class="text-gray-300">Baghgadi Fabrics, FB Fabrics, Pakistan</p>
+            </div>
+          </div>
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-left flex gap-4">
+            <div class="feature-icon flex-shrink-0"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4 class="text-xl serif gold-text mb-1">Business Hours</h4>
+              <p class="text-gray-300">Mon - Sat: 10:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal-right">
+          <h3 class="text-2xl serif gold-text mb-6">Send us a Message</h3>
+          <form onsubmit="sendMessage(event)" class="space-y-4">
+            <input type="text" placeholder="Your Name" required class="admin-input">
+            <input type="email" placeholder="Your Email" required class="admin-input">
+            <input type="tel" placeholder="Your Phone" class="admin-input">
+            <textarea placeholder="Your Message" rows="5" required class="admin-input"></textarea>
+            <button type="submit" class="btn-gold w-full py-4 rounded-full">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ADMIN PAGE ============ -->
+<div id="admin" class="page">
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Login -->
+      <div id="adminLogin" class="max-w-md mx-auto">
+        <div class="p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-black border border-yellow-400/20 reveal">
+          <div class="text-center mb-6">
+            <div class="feature-icon mx-auto mb-4"><i class="fas fa-lock"></i></div>
+            <h2 class="text-3xl serif gold-text">Admin Login</h2>
+            <p class="text-gray-400 text-sm mt-2">Enter password to access CMS</p>
+          </div>
+          <form onsubmit="adminLogin(event)" class="space-y-4">
+            <input type="password" id="adminPass" placeholder="Password" class="admin-input" required>
+            <button type="submit" class="btn-gold w-full py-3 rounded-full">Login</button>
+            <p class="text-xs text-gray-500 text-center">Default password: <span class="text-yellow-400">admin123</span></p>
+          </form>
+        </div>
+      </div>
+      
+      <!-- CMS Panel -->
+      <div id="adminPanel" class="hidden">
+        <div class="flex flex-wrap justify-between items-center mb-8 reveal">
+          <div>
+            <h2 class="text-4xl serif font-bold gold-text">CMS Dashboard</h2>
+            <p class="text-gray-400">Manage your products, prices, and images</p>
+          </div>
+          <div class="flex gap-3">
+            <button onclick="addProduct()" class="btn-gold px-6 py-3 rounded-full"><i class="fas fa-plus mr-2"></i>Add Product</button>
+            <button onclick="adminLogout()" class="btn-outline px-6 py-3 rounded-full"><i class="fas fa-sign-out-alt mr-2"></i>Logout</button>
+          </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+          <div class="admin-card reveal"><p class="text-gray-400 text-sm">Total Products</p><h3 id="statTotal" class="text-3xl gold-text serif mt-2">0</h3></div>
+          <div class="admin-card reveal"><p class="text-gray-400 text-sm">Categories</p><h3 id="statCat" class="text-3xl gold-text serif mt-2">0</h3></div>
+          <div class="admin-card reveal"><p class="text-gray-400 text-sm">Avg Price</p><h3 id="statAvg" class="text-3xl gold-text serif mt-2">Rs 0</h3></div>
+          <div class="admin-card reveal"><p class="text-gray-400 text-sm">Featured</p><h3 id="statFeat" class="text-3xl gold-text serif mt-2">0</h3></div>
+        </div>
+        
+        <!-- Products Table -->
+        <div class="admin-card overflow-x-auto reveal">
+          <h3 class="text-2xl serif gold-text mb-4">All Products</h3>
+          <div id="adminProducts" class="space-y-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div id="productModal" class="modal">
+  <div class="bg-zinc-900 rounded-2xl max-w-2xl w-full p-8 max-h-[90vh] overflow-y-auto border border-yellow-400/30">
+    <div class="flex justify-between items-center mb-6">
+      <h3 id="modalTitle" class="text-2xl serif gold-text">Product Details</h3>
+      <button onclick="closeModal()" class="text-2xl text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ============ EDIT PRODUCT MODAL ============ -->
+<div id="editModal" class="modal">
+  <div class="bg-zinc-900 rounded-2xl max-w-xl w-full p-8 max-h-[90vh] overflow-y-auto border border-yellow-400/30">
+    <div class="flex justify-between items-center mb-6">
+      <h3 id="editTitle" class="text-2xl serif gold-text">Edit Product</h3>
+      <button onclick="closeEditModal()" class="text-2xl text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
+    </div>
+    <form onsubmit="saveProduct(event)" class="space-y-4">
+      <input type="hidden" id="editId">
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Product Name</label>
+        <input type="text" id="editName" class="admin-input" required>
+      </div>
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Category</label>
+        <select id="editCategory" class="admin-input">
+          <option>Lawn</option><option>Chiffon</option><option>Khaddar</option><option>Silk</option><option>Linen</option>
+        </select>
+      </div>
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Price (Rs)</label>
+        <input type="number" id="editPrice" class="admin-input" required>
+      </div>
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Old Price (Rs) - Optional</label>
+        <input type="number" id="editOldPrice" class="admin-input">
+      </div>
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Image URL</label>
+        <input type="url" id="editImage" class="admin-input" required>
+      </div>
+      <div>
+        <label class="text-sm text-gray-400 mb-1 block">Description</label>
+        <textarea id="editDesc" class="admin-input" rows="3"></textarea>
+      </div>
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="editFeatured">
+        <label for="editFeatured" class="text-sm text-gray-300">Featured Product</label>
+      </div>
+      <div class="flex gap-3 pt-4">
+        <button type="submit" class="btn-gold flex-1 py-3 rounded-full">Save Product</button>
+        <button type="button" onclick="closeEditModal()" class="btn-outline flex-1 py-3 rounded-full">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- WHATSAPP FIXED BUTTON -->
+<a href="https://wa.me/923102125634?text=Hello%20Baghgadi%20Fabrics%2C%20I%20am%20interested%20in%20your%20products" target="_blank" class="whatsapp-fixed">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-yellow-400/20 pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-black font-bold text-xl serif">B</div>
+          <div>
+            <h3 class="text-xl serif gold-text font-bold">Baghgadi</h3>
+            <p class="text-xs text-gray-400">FB Fabrics</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm">Premium quality unstitched fabrics, suits, and luxury collections. Elegance in every thread.</p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/923102125634" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg serif gold-text mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#home" onclick="showPage('home')" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#shop" onclick="showPage('shop')" class="hover:text-yellow-400">Shop</a></li>
+          <li><a href="#about" onclick="showPage('about')" class="hover:text-yellow-400">About Us</a></li>
+          <li><a href="#contact" onclick="showPage('contact')" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg serif gold-text mb-4">Categories</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#shop" onclick="filterCategory('Lawn');showPage('shop')" class="hover:text-yellow-400">Lawn Collection</a></li>
+          <li><a href="#shop" onclick="filterCategory('Chiffon');showPage('shop')" class="hover:text-yellow-400">Chiffon Luxury</a></li>
+          <li><a href="#shop" onclick="filterCategory('Khaddar');showPage('shop')" class="hover:text-yellow-400">Khaddar Winter</a></li>
+          <li><a href="#shop" onclick="filterCategory('Silk');showPage('shop')" class="hover:text-yellow-400">Silk Elegance</a></li>
+          <li><a href="#shop" onclick="filterCategory('Linen');showPage('shop')" class="hover:text-yellow-400">Linen Premium</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg serif gold-text mb-4">Contact Info</h4>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li><i class="fas fa-phone text-yellow-400 mr-2"></i>0310-2125634</li>
+          <li><i class="fab fa-whatsapp text-yellow-400 mr-2"></i>+92 310 2125634</li>
+          <li><i class="fas fa-envelope text-yellow-400 mr-2"></i>info@baghgadi.com</li>
+          <li><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i>Pakistan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="text-center text-gray-500 text-sm">
+      <p>&copy; 2026 Baghgadi Fabrics - FB Fabrics. All Rights Reserved.</p>
+      <p class="mt-2">Designed with <i class="fas fa-heart text-yellow-400"></i> for elegance</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
